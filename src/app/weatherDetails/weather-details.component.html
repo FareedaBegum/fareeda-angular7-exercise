@@ -1,0 +1,27 @@
+<div class="row pad15">
+    <div class="col-sm-12">
+        <h2>{{this.cityName}}</h2>
+        <h4> temperature and sea level for the next 5 days with data every 3 hours by {{this.cityName}} </h4>
+    </div>
+
+    <div class="col-sm-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">City Name</th>
+                    <th scope="col">Temperature(Kelvin)</th>
+                    <th scope="col">Sea Level</th>
+                    <th scope="col">Next 5 days at 9:00</th>
+                </tr>
+            </thead>
+            <tbody *ngIf="detailsList">
+                <tr *ngFor="let details of detailsList">
+                    <th>{{this.cityName}}</th>
+                    <td> {{details.main.temp}}</td>
+                    <td>{{details.main.sea_level}}</td>
+                    <td>{{details.dt_txt}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+<div class="container">
+  <div class="col-sm-12" *ngFor="let cityWeather of weatherList">
+    <div class="col-sm-12 pad15" *ngIf="cityWeather?.main">
+      <div class="col-sm-12" *ngIf="cityWeather.name == 'London'">
+        <h2> <a [routerLink]="['/weather-details', cityWeather.name]">London</a></h2>
+      </div>
+      <div class="col-sm-12 img" *ngIf="cityWeather.name == 'London'"
+        [ngStyle]="{'background-image': 'url(' + '../../assets/London_Tower.jpg' + ')' }">
+        <div class="col-sm-12">
+          {{cityWeather.name | uppercase}}
+        </div>
+        <div class="col-sm-12">
+          <span>Temp in Kelvin: {{cityWeather.main.temp}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunrise: {{cityWeather.sys.sunrise}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunset: {{cityWeather.sys.sunset}}</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-12 pad15" *ngIf="cityWeather?.main">
+      <div class="col-sm-12" *ngIf="cityWeather.name == 'Berlin'">
+        <h2> <a [routerLink]="['/weather-details', cityWeather.name]">Berlin</a></h2>
+      </div>
+      <div class="col-sm-12 img" *ngIf="cityWeather.name == 'Berlin'"
+        [ngStyle]="{'background-image': 'url(' + '../../assets/Berlin.jpg' + ')' }">
+        <div class="col-sm-12">
+          {{cityWeather.name | uppercase}}
+        </div>
+        <div class="col-sm-12">
+          <span>Temp in Kelvin: {{cityWeather.main.temp}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunrise: {{cityWeather.sys.sunrise}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunset: {{cityWeather.sys.sunset}}</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-sm-12 pad15" *ngIf="cityWeather?.main">
+      <div class="col-sm-12" *ngIf="cityWeather.name == 'Paris'">
+        <h2>  <a [routerLink]="['/weather-details', cityWeather.name]"> Paris</a></h2>
+      </div>
+      <div class="col-sm-12 img" *ngIf="cityWeather.name == 'Paris'"
+        [ngStyle]="{'background-image': 'url(' + '../../assets/paris.jpg' + ')' }">
+        <div class="col-sm-12">
+          {{cityWeather.name | uppercase}}
+        </div>
+        <div class="col-sm-12">
+          <span>Temp in Kelvin: {{cityWeather.main.temp}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunrise: {{cityWeather.sys.sunrise}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunset: {{cityWeather.sys.sunset}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 pad15" *ngIf="cityWeather?.main">
+      <div class="col-sm-12" *ngIf="cityWeather.name == 'Madrid'">
+        <h2>  <a [routerLink]="['/weather-details', cityWeather.name]">Madrid </a></h2>
+      </div>
+      <div class="col-sm-12 img" *ngIf="cityWeather.name == 'Madrid'"
+        [ngStyle]="{'background-image': 'url(' + '../../assets/madrid.jpg' + ')' }">
+        <div class="col-sm-12">
+          {{cityWeather.name | uppercase}}
+        </div>
+        <div class="col-sm-12">
+          <span>Temp in Kelvin: {{cityWeather.main.temp}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunrise: {{cityWeather.sys.sunrise}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunset: {{cityWeather.sys.sunset}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 pad15" *ngIf="cityWeather?.main">
+      <div class="col-sm-12" *ngIf="cityWeather.name == 'Rome'">
+        <h2>  <a [routerLink]="['/weather-details', cityWeather.name]">Rome </a></h2>
+      </div>
+      <div class="col-sm-12 img" *ngIf="cityWeather.name == 'Rome'"
+        [ngStyle]="{'background-image': 'url(' + '../../assets/rome.jpg' + ')' }">
+        <div class="col-sm-12">
+          {{cityWeather.name | uppercase}}
+        </div>
+        <div class="col-sm-12">
+          <span>Temp in Kelvin: {{cityWeather.main.temp}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunrise: {{cityWeather.sys.sunrise}}</span>
+        </div>
+        <div class="col-sm-12">
+          <span>Sunset: {{cityWeather.sys.sunset}}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
